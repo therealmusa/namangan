@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white; /* umumiy fon oq */
+}
+.fade-out {
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+/* Header */
+.header {
+  background-color: #013D8C;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+
+/* Xarita */
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+svg {
+  width: 95%;
+  max-width: 1100px; /* katta o‘lcham */
+  height: auto;
+}
+
+.st0 {
+  fill: #1479C4;
+  stroke: #F5F9FC;
+  stroke-width: 3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.st0:hover {
+  fill: #0E4F85;
+}
+body.uychi-page {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #013D8C;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  letter-spacing: 1px;  
+  gap: 20px;
+  padding: 30px;
+}
+
+.map-section .map-large {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border: 2px solid #013D8C;
+  border-radius: 8px;
+}
+
+.info-section {
+  flex: 1;
+  max-width: 350px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.info-section h2 {
+  color: #013D8C;
+}
+
+.info-section a {
+  color: #ecf4ff;
+  text-decoration: none;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-section, .map-section .map-large {
+    max-width: 100%;
+  }
+}
+.back-btn {
+  display: block;              
+  width: fit-content;          
+  margin: 50px auto;           
+  padding: 18px 100px;
+  background-color: #1e5fb5;
+  color: rgb(255, 255, 255);                  /* matn rangi */
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #154a8d;
+  transform: scale(1.03);
+}
